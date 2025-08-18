@@ -1,4 +1,4 @@
-# Minimalistic Portfolio Website
+#Portfolio Website
 
 A clean, elegant, and interactive portfolio website built with React, featuring a minimalistic design philosophy that emphasizes content over decoration. This portfolio showcases your work through subtle animations, refined typography, and thoughtful use of white space.
 
@@ -59,122 +59,6 @@ This portfolio embodies the "less is more" principle, utilizing:
    ```
 5. **Open your browser** and visit `http://localhost:5173`
 
-## 📝 Customization Guide
-
-### Personal Information
-
-#### Hero Section
-Edit the hero section in `src/App.jsx` around line 86-94:
-```jsx
-<h1 className="heading-xl text-foreground mb-6">
-  Hello, I'm{' '}
-  <span className="text-gradient">Your Name</span>  {/* Change this */}
-</h1>
-
-<p className="body-lg max-w-2xl mx-auto mb-8">
-  Your personal description here...  {/* Update this */}
-</p>
-```
-
-#### About Me Section
-Update your story in `src/App.jsx` around line 168-177:
-```jsx
-<p>
-  Your personal journey and background...  {/* Customize this */}
-</p>
-<p>
-  Your current focus and philosophy...  {/* Customize this */}
-</p>
-```
-
-#### Skills and Technologies
-Modify the skills array in `src/App.jsx` around line 130-135:
-```jsx
-const skills = [
-  { name: 'Your Skill', level: 95, icon: Code },  {/* Update these */}
-  // Add or remove skills as needed
-]
-```
-
-Update the technology badges around line 179:
-```jsx
-{['React', 'TypeScript', 'Node.js', 'Python', 'Figma', 'AWS'].map((tech) => (
-  // Replace with your technologies
-))}
-```
-
-### Projects Section
-
-Update the projects array in `src/App.jsx` around line 237-265:
-```jsx
-const projects = [
-  {
-    title: 'Your Project Title',
-    description: 'Detailed project description...',
-    technologies: ['Tech1', 'Tech2', 'Tech3'],
-    image: lineArt,  // You can replace with your project images
-    category: 'Project Category',
-  },
-  // Add more projects...
-]
-```
-
-### Contact Information
-
-Update contact details in `src/App.jsx` around line 318-322:
-```jsx
-const contactInfo = [
-  { icon: Mail, label: 'Email', value: 'your@email.com', href: 'mailto:your@email.com' },
-  { icon: MapPin, label: 'Location', value: 'Your City, Country', href: '#' },
-  { icon: Calendar, label: 'Availability', value: 'Your availability status', href: '#' },
-]
-```
-
-Update social media links around line 324-328:
-```jsx
-const socialLinks = [
-  { icon: Github, url: 'https://github.com/yourusername', label: 'GitHub' },
-  { icon: Linkedin, url: 'https://linkedin.com/in/yourusername', label: 'LinkedIn' },
-  { icon: Coffee, url: 'your-coffee-link', label: 'Buy me a coffee' },
-]
-```
-
-### Visual Customization
-
-#### Colors
-Modify the color scheme in `src/App.css` starting from line 44:
-```css
-:root {
-  --primary: #2563EB;        /* Main accent color */
-  --chart-2: #10B981;        /* Secondary accent color */
-  --background: #FFFFFF;      /* Background color */
-  --foreground: #1A1A1A;     /* Text color */
-  /* Modify other colors as needed */
-}
-```
-
-#### Typography
-Update font preferences in `src/App.css` around line 119:
-```css
-body {
-  font-family: 'Your-Font', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-}
-```
-
-#### Images
-Replace the generated images in `src/assets/` with your own:
-- `hero_background_minimal.png` - Hero section background
-- `geometric_pattern_subtle.png` - Subtle background pattern
-- `line_art_element.png` - Project placeholder images
-
-### Adding New Sections
-
-To add a new section:
-
-1. **Create the component** following the existing pattern
-2. **Add navigation item** to the `navItems` array
-3. **Include the section** in the main App component
-4. **Add scroll detection** for the new section ID
 
 ## 🛠️ Technical Stack
 
@@ -266,23 +150,12 @@ pnpm run lint
 - Edge (latest)
 - Mobile browsers (iOS Safari, Chrome Mobile)
 
-## 🤝 Contributing
-
-This is a personal portfolio template. Feel free to:
-- Fork and customize for your own use
-- Submit issues for bugs or improvements
-- Share your customized versions
 
 ## 📄 License
 
 This project is open source and available under the MIT License.
 
-## 🙏 Acknowledgments
 
-- **Shadcn/UI** for the excellent component library
-- **Framer Motion** for smooth animations
-- **Tailwind CSS** for the utility-first approach
-- **Lucide** for the beautiful icon set
 
 ---
 
